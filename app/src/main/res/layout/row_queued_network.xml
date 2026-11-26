@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_dark"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageButton
+        android:id="@+id/btnDeleteQueued"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_red_bar"
+        android:contentDescription="إزالة"
+        android:src="@android:drawable/ic_menu_delete"
+        android:tint="@color/red_bright" />
+
+    <LinearLayout
+        android:id="@+id/rowInfoContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRowSsid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SSID"
+            android:textColor="@color/red_bright"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvRowSubline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="[WPA2] • قوة: 75% • التقدم: 0%"
+            android:textColor="@color/red_soft"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnToggleQueuedPause"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="@drawable/bg_red_bar"
+        android:contentDescription="إيقاف أو استئناف"
+        android:src="@android:drawable/ic_media_pause"
+        android:tint="@color/red_bright" />
+
+</LinearLayout>
